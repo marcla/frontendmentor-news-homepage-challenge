@@ -30,10 +30,11 @@ body {
 .main-menu__items {
     display: flex;
     list-style: none;
+    gap: 40px;
 }
 
 .main-menu__item {
-    margin: 0 12px;
+    /* margin: 0 0 0 20px; */
 }
 
 .main-menu__item a {
