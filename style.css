@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
 html {
-
+    background: #FEFDF9;
 }
 
 
@@ -19,7 +19,6 @@ body {
 .main-header{
     display: flex;
     justify-content: space-between;
-        align-items: center;
     height: 4rem;
     margin-bottom: 2rem;
 }
@@ -50,14 +49,17 @@ body {
 
 .main-section-container {
     display: grid;
-    grid-template-columns: 500px auto 350px ;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr auto auto;
     height: 100%;
     grid-column-gap: 25px;
+    grid-row-gap: 25px;
 }
 
 
 .main-image {
+  background-image: url("/assets/images/image-web-3-desktop.jpg") ;
+  background-size: cover;
   height: 100%;
   grid-row: 1 / 1;
   grid-column: 1 / span 2;
@@ -95,12 +97,47 @@ body {
 
 .main-title {
     font-weight: 800;
-    font-size: 42px;
-    text-align: left;
+    font-size: 3.5vw;
+    line-height: 1;
     grid-column: 1 ;
 }
 
 .article {
+    
+    color: hsl(236, 13%, 42%);
+    display: flex;
+    flex-direction: column;
     grid-column: 2;
-    margin: 20px auto;
+    justify-content: space-between;
+}
+/* 
+.article .button-read-more{
+    
+} */
+
+.article p {
+    margin: 0 0 40px 0;
+}
+
+.button-read-more button{
+    border: 0;
+    background: hsl(240, 100%, 5%) ;
+    color:white;
+    font: inherit;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 20px 40px;
+}
+
+.button-read-more button:hover {
+    background: hsl(5, 85%, 63%);
+}
+
+.button-read-more {
+    justify-content:end;
+}
+
+.bottom-news {
+    display: inline-block;
+    grid-column: 1 / span 2;
 }
