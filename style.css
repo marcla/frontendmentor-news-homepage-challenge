@@ -254,7 +254,6 @@ body {
 }
 
 
-
 footer {
     margin: 2rem 0;
     grid-column: 1 / span 2 ;
@@ -287,12 +286,9 @@ footer {
         height: 20rem;
     }
 
-
     .main-title {
     font-size: 11vw;
     }
-    
-   
 
     .section {
         margin-top: 40px;
