@@ -1,11 +1,11 @@
 var toggleButton = document.querySelector(".toggle-button");
-var mobileNav = document.querySelector(".mobile-nav");
+var menuMobile = document.querySelector(".main-menu");
 var mainSection = document.querySelector(".main-section-container");
 var closeButton = document.querySelector(".close-button");
 
 
 toggleButton.addEventListener("click", function() {
-  mobileNav.classList.add("open");
+  menuMobile.classList.add("open");
     setTimeout(function() {
    toggleButton.syle.display("none");
    closeButton.syle.display = "block";
@@ -15,7 +15,6 @@ toggleButton.addEventListener("click", function() {
 
 
 closeButton.addEventListener("click", function() {
-  mobileNav.classList.remove("open");
-       backdrop.style.display = "none";
+  menuMobile.classList.remove("open");
 
 });
