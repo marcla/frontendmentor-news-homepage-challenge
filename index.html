@@ -26,6 +26,16 @@
   <body>
     <header class="main-header">
       <img src="assets/images/logo.svg">
+      <button class="toggle-button">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#00001A" fill-rule="evenodd">
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </g>
+        </svg>
+      </button>
+
+
       <nav class="main-menu">
         <ul class="main-menu__items">
           <li class="main-menu__item">
@@ -44,13 +54,58 @@
             <a href="">Categories</a>
           </li>
         </ul>
+      </nav>
 
+      <nav class="mobile-nav">
+        <button class="close-button">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </button>
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item">
+            <a href="">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="">New</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="">Popular</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="">Trending</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="">Categories</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="main-section-container">
       <div class="main-image">
-        <!-- <img src="assets/images/image-web-3-desktop.jpg"></img> -->
+      </div>
+
+      <div class="main-title">
+        The Bright Future of Web 3.0?
+      </div>
+
+      <div class="article">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the
+          hands
+          of
+          the
+          people.
+          But is it really fulfilling its promise?
+        </p>
+
+        <div class="button-read-more">
+          <button>READ MORE</button>
+        </div>
       </div>
 
       <div class="news-items">
@@ -75,6 +130,7 @@
         </div>
 
 
+
         <div class="news-item last-child">
           <h4>
             <a href="">Is VC Funding Drying Up?</a>
@@ -83,28 +139,8 @@
         </div>
       </div>
 
-      <div class="main-title">
-        The Bright Future of Web 3.0?
-      </div>
-
-      <div class="article">
-        <p>
-          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
-          of
-          the
-          people.
-          But is it really fulfilling its promise?
-        </p>
-
-        <div class="button-read-more">
-          <button>READ MORE</button>
-        </div>
-      </div>
-
-
-
       <div class="section">
-        <div class="section-image" style="background-image: url('/assets/images/image-retro-pcs.jpg') ;">
+        <div class="section-image" style="background-image: url('./assets/images/image-retro-pcs.jpg')">
         </div>
         <div class="section-text">
           <h1>01</h1>
@@ -116,7 +152,7 @@
       </div>
 
       <div class="section">
-        <div class="section-image" style="background-image: url('/assets/images/image-top-laptops.jpg')">
+        <div class="section-image" style="background-image: url('./assets/images/image-top-laptops.jpg')">
         </div>
         <div class="section-text">
           <h1>02</h1>
@@ -128,7 +164,7 @@
       </div>
 
       <div class="section">
-        <div class="section-image" style="background-image: url('/assets/images/image-gaming-growth.jpg');">
+        <div class="section-image" style="background-image: url('./assets/images/image-gaming-growth.jpg');">
         </div>
         <div class="section-text">
           <h1>03</h1>
@@ -149,6 +185,8 @@
       </div>
 
     </footer>
+    <script src="./shared.js"></script>
+
   </body>
 
 </html>
