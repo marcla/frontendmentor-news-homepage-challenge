@@ -1,6 +1,5 @@
 var toggleButton = document.querySelector(".toggle-button");
 var menuMobile = document.querySelector(".main-menu");
-var mainSection = document.querySelector(".main-section-container");
 var closeButton = document.querySelector(".close-button");
 
 
