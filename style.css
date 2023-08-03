@@ -23,6 +23,7 @@ body {
 }
 
    .close-button {
+    display: none;
        position: absolute;
        top: 1rem;
        right: 1rem;
@@ -262,9 +263,14 @@ footer {
     .toggle-button{
         display: block;
     }
+
+    .close-button{
+        display: block;
+    }
+
        
   .main-menu {
-      transform: translateX(100%);
+      transform: translateX(-100%);
       position: fixed;
       z-index: 100;
       margin: auto;
